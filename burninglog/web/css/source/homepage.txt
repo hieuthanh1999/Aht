@@ -1,0 +1,139 @@
+<div class="banner-content">
+<div class="banner-tiles">
+<div class="banner-tiles-col"><img src="{{media url="wysiwyg/banner2.png"}}" alt="">
+<div class="banner-tiles-title">
+<h3 class="title-one">Outdoor Dining</h3>
+<button class="standard-button tiles" type="button"><span class="la-angle-right">Shop now</span></button></div>
+</div>
+<div class="banner-tiles-col"><img src="{{media url="wysiwyg/banner3.png"}}" alt="">
+<div class="banner-tiles-title">
+<h3 class="title-two">Outdoor Lounges</h3>
+<button class="standard-button tiles " type="button"><span class="la-angle-right">Shop now</span></button></div>
+</div>
+</div>
+<div class="reason">
+<div class="reason-col"><a href="#"><span class="la-angle-right">OUTDOOR FURNITURE CLEARANCE STORE</span></a></div>
+<div class="reason-col"><a href="#"><span class="la-angle-right">We ship australia wide</span></a></div>
+<div class="reason-col"><a href="#"><span class="la-angle-right">30 Day money Back Guarantee</span></a></div>
+</div>
+<div class="banner-two">
+<div class="banner-two-col"><img src="{{media url="wysiwyg/banner4.png"}}" alt="">
+<div class="banner-two-title">
+<h3 class="title">Vogue Collection</h3>
+<p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary  button-two " type="button"><span class="la-angle-right">Shop now</span></button></div>
+</div>
+<div class="banner-two-col"><img src="{{media url="wysiwyg/banenr5.png"}}" alt="">
+<div class="banner-two-title">
+<h3 class="title">Maldives Collection</h3>
+<p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary  button-two  " type="button"><span class="la-angle-right">Shop now</span></button></div>
+</div>
+<div class="banner-two-col"><img src="{{media url="wysiwyg/banner6.png"}}" alt="">
+<div class="banner-two-title">
+<h3 class="title">Marseilles Collection</h3>
+<p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary  button-two " type="button"><span class="la-angle-right">Shop now</span></button></div>
+</div>
+</div>
+<div class="banner-tiles">
+<div class="banner-tiles-col"><img src="{{media url="wysiwyg/tiles3.png"}}" alt="">
+<div class="banner-tiles-title">
+<h3 class="title-three">Catalogues</h3>
+<button class="standard-button button-two" type="button"><span class="la-angle-right">Explore now</span></button></div>
+</div>
+<div class="banner-tiles-col"><img src="{{media url="wysiwyg/tiles2.png"}}" alt=""></div>
+</div>
+<div class="list-product">
+<div class="content-list-product">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" title="Best sellers" show_pager="1" products_per_page="5" products_count="5" template="Magento_CatalogWidget::product/widget/content/grid.phtml" cache_lifetime="86400" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^]^]" page_var_name="pespgu"}}</div>
+<div class="content-list-product">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" title="New arrivals" show_pager="1" products_per_page="5" products_count="5" template="Magento_CatalogWidget::product/widget/content/grid.phtml" cache_lifetime="86400" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^]^]" page_var_name="pwtlrv"}}</div>
+</div>
+<div class="content-outdoor">
+<div class="outdoor-title">
+<h3 class="outdoor-title-name">Outdoor inspiration with our instagram</h3>
+<p class="outdoor-title-discription">Find us at @burninglog, show us your furniture with #burninglog</p>
+</div>
+<div class="outdoor-content">
+<div class="outdoor-col"><img src="{{media url="wysiwyg/1.png"}}" alt=""></div>
+<div class="outdoor-col"><img src="{{media url="wysiwyg/22.png"}}" alt=""></div>
+<div class="outdoor-col"><img src="{{media url="wysiwyg/3.png"}}" alt=""></div>
+<div class="outdoor-col"><img src="{{media url="wysiwyg/4.png"}}" alt=""></div>
+<div class="outdoor-col"><img src="{{media url="wysiwyg/5.png"}}" alt=""></div>
+<div class="outdoor-col"><img src="{{media url="wysiwyg/5.png"}}" alt=""></div>
+</div>
+<div class="outdoor-button"><button class="action primary  button-outdoor" type="button">View our instagram</button></div>
+</div>
+</div>
+<div class="content-blog">
+<div class="content-blog-title">
+<h3 class="content-blog-title-name">Lifestyle Blog</h3>
+</div>
+<div class="content-blog-row">
+<div class="content-blog-col"><img src="{{media url="wysiwyg/blog1.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">Add a burst of colour to your backyard</h4>
+<p class="blog-title-discription">Introducing the Sunbrella ottoman collection, an exciting set of new outdoor accessory pieces that will liven up any outdoor lounge setting...</p>
+<a class="blog-title-link" href="#"> View more </a></div>
+</div>
+<div class="content-blog-col"><img src="{{media url="wysiwyg/2.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">The Maldives modular collection</h4>
+<p class="blog-title-discription">Outdoor modular lounges are enjoying extraordinary popularity at the moment as we look to bring the comforts of the lounge room into the great outdoors...</p>
+<a class="blog-title-link" href="#"> View more </a></div>
+</div>
+<div class="content-blog-col"><img src="{{media url="wysiwyg/blog3.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">Outdoor furniture trends - this years hottest wicker colour</h4>
+<p class="blog-title-discription">After launching the colour last year we are finding our "Moonscape" synthetic wicker colour extraordinarily popular. It really has given all weather wicker outdoor furniture...</p>
+<a class="blog-title-link" href="#"> View more </a></div>
+</div>
+</div>
+<div class="content-blog-row">
+<div class="content-blog-col"><img src="{{media url="wysiwyg/blog4.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">Is this the best outdoor table in Australia?</h4>
+<p class="blog-title-discription">When it comes to furniture materials suitable for extended life in the Australian outdoors it is hard to go past aluminium. It is very light and will not rust which makes...</p>
+<a class="blog-title-link" href="#"> View more </a></div>
+</div>
+<div class="content-blog-col"><img src="{{media url="wysiwyg/blog5.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">The undeniable elegance of cast aluminum furniture</h4>
+<p class="blog-title-discription">Having used cast aluminium outdoor furniture for years in our dining range we are still unsure if it's growing popularity is due more to its elegant look or the superb performance qualities...</p>
+<a class="blog-title-link" href="#"> View more </a></div>
+</div>
+<div class="content-blog-col"><img src="{{media url="wysiwyg/blog6.png"}}" alt="">
+<div class="blog-title">
+<h4 class="blog-title-name">Christmas decorating for your outdoor setting</h4>
+<p class="blog-title-discription">When decorating for Christmas, many people remember to decorate the house, the yard and the Christmas tree but what about the dining room table?</p>
+<a class="blog-title-link" href="#"> View more</a></div>
+</div>
+</div>
+</div>
+<div class="content-testimonaials">
+<h4 class="content-testimonaials-title">Burning Log Testimonials</h4>
+<div class="content-testimonaials-row">
+<div class="content-testimonaials-col">
+<p class="testimonaials-dicription">We just had our outdoor seating delivered. A massive thank you to Tony (Melbourne store) for your service. You went above and beyond, and you always… <a href="#">View more</a></p>
+<h5 class="testimonaials-title">Rebecca</h5>
+<p class="testimonaials-date">November 17, 2016</p>
+</div>
+<div class="content-testimonaials-col">
+<p class="testimonaials-dicription">We just had our outdoor seating delivered. A massive thank you to Tony (Melbourne store) for your service. You went above and beyond, and you always... <a href="#">View more</a></p>
+<h5 class="testimonaials-title">Rebecca</h5>
+<p class="testimonaials-date">November 17, 2016</p>
+</div>
+</div>
+<div class="content-testimonaials-row">
+<div class="content-testimonaials-col">
+<p class="testimonaials-dicription">We have purchased an outdoor lounge from Outdoor Elegance and just wanted to say the experience was fantastic from the purchase to the delivery... <a href="#">View more</a></p>
+<h5 class="testimonaials-title">Michelle</h5>
+<p class="testimonaials-date">November 29, 2016</p>
+</div>
+<div class="content-testimonaials-col">
+<p class="testimonaials-dicription">Excellent service from Tamara at Terrey Hills. Lyon table and Maldives chairs arrived on Monday, couldn't be... <a href="#">View more</a></p>
+<h5 class="testimonaials-title">Michelle</h5>
+<p class="testimonaials-date">November 29, 2016</p>
+</div>
+</div>
+<div class="content-testimonaials-row-button"><button class="action primary  button-testimonaials" type="button">View more testimonials</button></div>
+</div>

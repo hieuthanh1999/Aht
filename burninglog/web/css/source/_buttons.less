@@ -1,0 +1,115 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+
+  // button
+  .standard-button {
+    .lib-css(box-shadow, none);
+    .lib-button(@_button-background: @color-button-background-slider,
+          @_button-color: @color-white,
+          @_button-background-hover: @color-white,
+          @_button-padding: 12px 21px,
+          @_button-border: 1px solid @color-border-buttons,
+          @_button-font-family: @font-family__roboto,
+          @_button-font-weight: 700,
+          @_button-font-size: 15px,
+          @_button-line-height: 20px);
+    &:hover {
+      .lib-css(background-color, @color-black);
+      .lib-css(color, @color-white);
+    }
+    .la-angle-right {
+      &::after {
+        padding-left: 4px;
+        content: "\f105";
+        font-family: @font-family__la;
+        font-size: 16px;
+        color: @color-white;
+      }
+    }
+  
+  }
+  .la-angle-right {
+    &::after {
+      padding-left: 4px;
+      content: "\f105";
+      font-family: @font-family__la;
+      font-size: 16px;
+      color: @color-black;
+    }
+  }
+
+  
+  //cart button
+  .cart-button{
+    .lib-css(box-shadow, none);
+    .lib-button(@_button-background: @color-button-cart,
+          @_button-color: @color-white,
+          @_button-background-hover: @color-white,
+          @_button-padding: 10px 70px,
+          @_button-border: 1px solid @color-border-buttons,
+          @_button-font-family: @font-family__roboto,
+          @_button-font-weight: 700,
+          @_button-font-size: 15px,
+          
+          @_button-line-height: 20px);
+    &:hover {
+      .lib-css(background-color, @color-blue-dodger);
+      .lib-css(color, @color-white);
+    }
+    .la-angle-right {
+      &::after {
+        padding-left: 4px;
+        content: "\f105";
+        font-family: @font-family__la;
+        font-size: 16px;
+        color: @color-white;
+      }
+    }
+  
+  }
+  
+    //  Using buttons mixins
+    button,
+    a.action.primary {
+        .lib-css( outline,  2px solid @color-white);
+        .lib-css(text-transform, uppercase);
+        
+
+    }
+
+    button {
+        &:not(.primary) {
+            .lib-css(box-shadow, none);
+
+            &:active {
+                .lib-css(box-shadow, none);
+            }
+        }
+    }
+
+    body {
+        &:not(._keyfocus) {
+            button {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    a.action.primary {
+        .lib-link-as-button();
+    }
+    .action.primary {
+        .lib-button-primary();
+    }
+}

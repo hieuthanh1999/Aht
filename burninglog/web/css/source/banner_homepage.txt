@@ -1,0 +1,6 @@
+<div class="homepage-banner"><img src="{{media url="wysiwyg/banner1.png"}}" alt="">
+<div class="homepage-content">
+<h1 class="title">Outdoor Dining</h1>
+<p class="description">Get summer ready with <br>our exclusive outdoor furniture</p>
+<button class="standard-button hompage-button" type="button"><span class="la-angle-right">Shop outdoor Daybeds</span></button></div>
+</div>

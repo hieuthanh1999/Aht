@@ -1,0 +1,34 @@
+@import "_fitter.less";
+@import "_listing.less";
+@import "_responsive.less";
+//mixin
+.banner(@width, @top, @left, @font-size-title, @margin-bottom, @font-size-dis, @margin-right, @block){
+    .main-banner {
+      position: relative;
+      .banner-title {
+        width: @width;
+        position: absolute;
+        top: @top;
+        left: @left;
+      }
+     .title {
+        margin-bottom: @margin-bottom;
+        font-family: @font-family-name__sunvalley;
+        font-size: @font-size-title;
+        line-height: 30px;
+        color: @color-white;
+        letter-spacing: 0.1px;
+      }
+      .description {
+        display: @block;
+        margin-right: @margin-right;
+        font-size: @font-size-dis;
+        line-height: 22px;
+        color: @color-white;
+        letter-spacing: 0.1px;
+        font-weight: 400;
+        font-family: @font-family-name__roboto;
+      }
+    }
+  }
+  

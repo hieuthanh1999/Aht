@@ -1,0 +1,53 @@
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+  .banner(100%, 40%, 5%, 28px, 0px, 0, 0, none);
+  .page-products .product-item-info {
+    padding-top: 17px;
+  } 
+    .more-color {
+        letter-spacing: 0.3px;
+
+    }
+    .lable-sale {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+    .action.primary {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+  .banner(100%, 27%, 5%, 40px, 0px, 12px, 10%, block);
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .banner(100%, 35%, 5%, 52px, 15px, 12px, 20%, block);
+    .filter-title strong {
+        padding: 12px 15px;
+    }
+      //hidden wishlist
+      .product-item-actions .actions-primary + .actions-secondary {
+        display: none;
+    }
+    .toolbar-amount {
+        float: right;
+    }
+        //product
+    .lable-order {
+        padding: 4px 4px;
+        font-size: 10px;
+    }
+    .column.main .product-item {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .filter-title strong {
+        background-color: unset;
+        box-shadow: unset;
+        border-radius: unset;
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+  .banner(70%, 175px, 40px, 72px, 20px, 15, 39%, block);
+}
