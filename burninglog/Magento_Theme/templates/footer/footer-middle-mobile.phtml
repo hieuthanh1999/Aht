@@ -1,0 +1,61 @@
+<div class="infor mobile" id="accordion" data-mage-init='{
+        "accordion":{
+            "active": [1, 2],
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": true
+        }}'>
+<div class="item">
+<?php
+    echo $block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-categories-mobile')
+    ->toHtml()
+?>
+</div>
+
+<!-- <p data-role="collapsible"><span class="title" data-role="trigger">Categories</span></p>
+<ul class="content" data-role="content">
+<li>{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="category/widget/link/link_block.phtml" id_path="category/42"}}</li>
+<li>{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="category/widget/link/link_block.phtml" id_path="category/43"}}</li>
+<li><a href="#">Outdoor daybeds</a></li>
+<li><a href="#">Outdoor chairs and tables</a></li>
+<li><a href="#">Garden furniture</a></li>
+<li><a href="#">Umbrellas</a></li>
+<li><a href="#">Outdoor heaters</a></li>
+<li><a href="#">Outdoor living</a></li>
+<li><a href="#">Clearance</a></li>
+</ul> -->
+
+<div class="item">
+<?php
+    echo $block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-infor')
+    ->toHtml()
+?>
+<!-- <p class="collapsibleTab" data-role="collapsible"><span class="title" data-role="trigger">Why Burning Log?</span></p>
+<ul class="content collapsibleContent" data-role="content">
+<li><a href="#">About us</a></li>
+<li><a href="#">All products</a></li>
+<li><a href="#">Catalogues</a></li>
+<li><a href="#">Contact us</a></li>
+</ul> -->
+</div>
+
+<div class="item">
+<?php
+    echo $block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-policies')
+    ->toHtml()
+?>
+<!-- <p><span class="title">Our Policies</span></p>
+<ul class="content">
+<li><a href="#">Terms and conditions</a></li>
+<li><a href="#">Return policy</a></li>
+<li><a href="#">Delivery and pick up policy</a></li>
+<li><a href="#">Privacy policy</a></li>
+</ul> -->
+</div>
+</div>

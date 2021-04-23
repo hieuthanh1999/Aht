@@ -1,0 +1,188 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+@color-newsletter-border-input: #ddd;
+@color-newsletter-arrow: #424242;
+
+& when (@media-common = true) {
+
+    //  Newsletter subscription
+    .block.newsletter {
+        margin-bottom: 20px;
+        
+        .content span {
+            display: block;
+            padding: 1% 10% 6.2% 0;
+        }
+
+        .title, .content {
+            padding: 0 0 0 9.45%;
+        }
+
+        .form.subscribe {
+            display: table;
+            width: 100%;
+            position: relative;
+            margin-bottom: 11%;
+        }
+
+        .fieldset {
+            display: table-cell;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
+
+        .form.subscribe > .field, .block.newsletter .form.subscribe > .actions {
+            width: 100%;
+        }
+
+        .field {
+            margin: 0;
+
+            .control {
+                .lib-icon-font(
+                @icon-envelope,
+                @_icon-font-size: 16px,
+                @_icon-font-line-height: 32px,
+                @_icon-font-color: @form-element-input-placeholder__color,
+                @_icon-font-margin: 0 0 0 8px
+                );
+
+                &:before {
+                    position: absolute;
+                }
+
+                display: block;
+            }
+        }
+
+        input {
+            padding: 3.5% 5% 4.5%;
+            height: unset;
+            font-size: @font-size13;
+            color: @color-gray40;
+            font-weight: @font-weight__regular;
+            letter-spacing: -0.3px;
+            border: 1px solid @color-newsletter-border-input;
+        }
+
+        .title {
+            display: block;
+        }
+
+        .label {
+            &:extend(.abs-visually-hidden all);
+        }
+
+        .actions { 
+            display: table-cell;
+            vertical-align: top;
+            position: absolute;
+            right: 1%;
+            top: 52%;
+            transform: translateY(-50%);
+        }
+
+        .action.subscribe {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            white-space: nowrap;
+            background-color: unset;
+            border: unset;
+            color: @color-newsletter-arrow;
+            font-size: 11px;
+        }
+
+        .field-error, div.mage-error[generated] {
+            position: absolute;
+        }
+
+        .action.primary {
+            padding: 6px 18px;
+        }
+
+        .social ul {
+            display: flex;
+            li {
+                padding: 0 7.1% 0 3%;
+                a i {
+                    font-size: @font-size18;   
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block.newsletter {
+        max-width: 44%;
+        width: max-content;
+        
+        .form.subscribe {
+            > .field,
+            > .actions {
+                float: left;
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .block {
+        &.newsletter {
+            margin-bottom: 23px;
+            .content {
+                span {
+                    padding: 0 15% 5%;
+                }
+                ul {
+                justify-content: center;
+                }
+            }
+            input {
+                font-size: 12px;
+                padding: 3.5% 0 3.5% 4.2%;
+                letter-spacing: 0.2px;
+                width: 95%;
+            }
+
+            .form.subscribe {
+                margin-bottom: 8%;
+            }
+
+            .field {
+                .control:before {
+                    font-size: 13px;
+                }
+            }
+
+            .actions {
+                right: 2.5%;
+                top: 53%;
+            }
+            .action.primary {
+                padding: 6px 18px;
+            }
+            .social {
+                ul li {
+                    padding: 0 3.9%;
+                }
+            }
+        }
+    }
+}

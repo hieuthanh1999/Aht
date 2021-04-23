@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_width" xsi:type="number">210</argument>
+                <argument name="logo_height" xsi:type="number">200</argument>
+                <argument name="logo_alt" xsi:type="string">Burning Log</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="register-link" remove="true" />
+        <!-- <referenceBlock name="authorization-link-login" remove="true" /> -->
+        <referenceBlock name="my-account-link" remove="true" />
+        <!-- <referenceBlock name="footer" remove="true" /> -->
+        <!-- <referenceBlock name="my-account-link" remove="true" /> -->
+        <!-- <referenceBlock name="catalog.compare.link" remove="true" /> -->
+        <!-- <referenceBlock name="wish-list-link" remove="true" /> -->
+
+        <referenceContainer name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
+            <block class="Magento\Framework\View\Element\Template" name="header-top" before="-" template="Magento_Theme::html/header/header_top.phtml" />
+            <!-- <block class="Magento\Cms\Block\Block" name="header.contact.desktop" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header-top-left-contact</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="header.links.desktop" after="header.contact.desktop">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header-top-center-links</argument>
+                </arguments>
+            </block> -->
+        </referenceContainer>
+        
+        <referenceContainer name="footer-container">
+            <container name="footer.showroom" label="Footer Showroom" htmlTag="div" htmlClass="footer showroom page-main" before="-">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.showroom.block" template="Magento_Theme::footer/showroom.phtml" />
+            </container>
+            <container name="footer.banner" label="Footer Banner" htmlTag="div" htmlClass="footer banner" after="footer.showroom">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.banner.block" template="Magento_Theme::footer/banner.phtml" />
+            </container>
+            <container name="footer.top" label="Footer Top" htmlTag="div" htmlClass="footer top" after="footer.banner">
+                <container htmlTag="div" htmlClass="inner footer-top page-main">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.top.block" template="Magento_Theme::footer/footer-top.phtml" />
+                </container>
+            </container>
+            <referenceContainer name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+                <referenceBlock class="Magento\Store\Block\Switcher" name="store_switcher" remove="true" />
+                <referenceBlock class="Magento\Framework\View\Element\Html\Links" name="footer_links" remove="true" />
+                <block class="Magento\Framework\View\Element\Template" name="footer.middle" template="Magento_Theme::footer/footer-middle.phtml" />
+                <block class="Magento\Framework\View\Element\Template" name="footer.middle.mobile" template="Magento_Theme::footer/footer-middle-mobile.phtml" />
+                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
+                <referenceBlock class="Magento\Framework\View\Element\Template" name="report.bugs" remove="true" />
+            </referenceContainer>
+        </referenceContainer>
+           
+    </body>
+</page>

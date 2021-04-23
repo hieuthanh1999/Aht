@@ -1,0 +1,33 @@
+<?php
+    echo $block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('header-top-left-contact')
+    ->toHtml()
+?>
+<!-- <div class="header-top-desktop-left"><a href="#"><span class="title">Contact us</span><span class="content">1300 660 330</span></a></div> -->
+<?php
+    echo $block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('header-top-center-links')
+    ->toHtml()
+?>
+
+<div class="header-top-mobile-left">
+    <?php
+        echo $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-address-mobile')
+        ->toHtml()
+    ?>
+</div>
+<!-- <i class="fas fa-map-marker-alt"></i>
+<span>Outdoor Furniture Showrooms</span> -->
+
+<div class="header-top-mobile-right">
+    <?php
+        echo $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-contact-mobile')
+        ->toHtml()
+    ?>
+</div>
